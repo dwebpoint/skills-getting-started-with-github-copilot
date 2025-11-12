@@ -136,6 +136,40 @@ button:hover {
   display: none;
 }
 
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8px;
+}
+
+.participants-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 5px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.participant-email {
+  flex-grow: 1;
+}
+
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px 8px;
+  transition: transform 0.2s;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+  background-color: transparent;
+}
+
 footer {
   text-align: center;
   margin-top: 30px;
