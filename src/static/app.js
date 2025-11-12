@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let participantsList = "";
         if (details.participants.length > 0) {
           participantsList = `
-            <p><strong>Participants:</strong></p>
+            <p><strong>Current Participants:</strong></p>
             <ul class="participants-list">
               ${details.participants.map(email => `
                 <li>
@@ -35,6 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 </li>
               `).join('')}
             </ul>
+          `;
+        } else {
+          participantsList = `
+            <div class="participants-section">
+              <p><strong>Current Participants:</strong></p>
+              <p class="no-participants">No participants yet</p>
+            </div>
           `;
         }
 
